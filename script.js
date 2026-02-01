@@ -1,30 +1,29 @@
-﻿// Data updated with correct image paths
-const projects = [
+﻿const projects = [
     {
         title: "Mini Physics Engine",
         description: "Development of a C++ physics engine using OpenFramework: collision handling and dynamic simulation within an R&D course at UQAC.",
-        image: "assets/images/Moteur.png", // Attention à la majuscule 'M'
+        image: "Moteur.png", // Plus de dossier, juste le nom
         tags: ["C++", "OpenFramework", "Physics", "R&D"],
         link: "https://github.com/Leptar/AYLMoteurPhysique"
     },
     {
         title: "One Last Stake",
         description: "Game created on Unreal Engine 5 in 48h for the Wonderjam UQAC Fall 2025. Available on Itch.io.",
-        image: "assets/images/OneLastStake.png",
+        image: "OnelastStake.png",
         tags: ["Unreal Engine 5", "Game Jam", "48h", "C++"],
         link: "https://eyrone.itch.io/one-last-stake"
     },
     {
         title: "Borealis",
         description: "Creation of a complete game prototype (Game Design & Code) as part of a university course at UQAC.",
-        image: "assets/images/Borealis.png",
+        image: "Borealis.png",
         tags: ["UQAC", "Prototype", "Game Design"],
         link: "https://tomdouaud.itch.io/borealis"
     },
     {
         title: "Violence is always the Answer",
         description: "Game created in 72h for the Mini Jam 167 on Godot. Ranked and playable online.",
-        image: "assets/images/VIAS.png",
+        image: "VIAS.png",
         tags: ["Godot", "Game Jam", "GDScript", "72h"],
         link: "https://tomdouaud.itch.io/violence-is-always-the-anwser"
     }
