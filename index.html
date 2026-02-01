@@ -3,58 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio | Développeur C++ & Gameplay</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Léo Cheikh-Boukal | Développeur Jeux Vidéo</title> <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
-    <div class="logo">MonPortfolio</div>
+    <div class="logo">Léo.CB</div>
     <ul>
         <li><a href="#about">Profil</a></li>
         <li><a href="#skills">Compétences</a></li>
         <li><a href="#projects">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#education">Formation</a></li> <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
 <header id="about">
     <div class="hero-content">
-        <h1>Bonjour, je suis Développeur Gameplay</h1>
-        <p>Spécialisé en C++, Unreal Engine 5 et simulation physique.</p>
-        <a href="#projects" class="btn">Voir mes travaux</a>
+        <h1>Léo Cheikh-Boukal</h1>
+        <h2>Étudiant en Maîtrise Développement JV (UQAC)</h2>
+        <p class="highlight">À la recherche d'un stage (Développement Moteur / Gameplay) pour Juillet 2026</p>
+        <div class="hero-btns">
+            <a href="#contact" class="btn">Me contacter</a>
+            <a href="https://github.com/Leptar" target="_blank" class="btn btn-outline">GitHub</a>
+            <a href="https://leptar.itch.io/" target="_blank" class="btn btn-outline">Itch.io</a>
+        </div>
     </div>
 </header>
 
 <section id="skills" class="container">
-    <h2>Mes Compétences</h2>
+    <h2>Compétences Techniques</h2>
     <div class="skills-grid">
         <div class="skill-card">
-            <h3>Moteurs de Jeu</h3>
-            <p>Unreal Engine 5, Unity</p>
+            <h3>Moteurs & Outils</h3>
+            <p>Unreal Engine 5, Godot, Unity (Base)</p>
+            <p class="sub-skill">Perforce, Git, Jira, Jetbrains Toolbox</p>
         </div>
         <div class="skill-card">
             <h3>Langages</h3>
-            <p>C++, C#, Python, CMake</p>
+            <p>C++, C#, Python, GDScript</p>
+            <p class="sub-skill">SQL, PHP, Bash, Kotlin (Android)</p>
         </div>
         <div class="skill-card">
-            <h3>Technique</h3>
-            <p>Physique (RigidBody, Quadtree), AI, 3D Math</p>
+            <h3>Savoir-faire</h3>
+            <p>Conception Algorithmique, Optimisation, Programmation Réseau</p>
+            <p class="sub-skill">POO, Méthode Agile, R&D</p>
         </div>
     </div>
 </section>
 
 <section id="projects" class="container">
-    <h2>Projets Récents</h2>
+    <h2>Projets Réalisés</h2>
     <div class="projects-grid" id="projects-container">
     </div>
 </section>
 
+<section id="education" class="container">
+    <h2>Formation</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <h3>Maîtrise en développement de Jeux Vidéo</h3>
+            <span class="date">2025 - 2027 (En cours)</span>
+            <p>UQAC (Université du Québec à Chicoutimi), Canada.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>Bi-diplomation : Baccalauréat Dév. JV & BUT Informatique</h3>
+            <span class="date">2022 - 2025</span>
+            <p>UQAC (Canada) et IUT de Rodez (France).</p>
+            <p><em>Inclus un semestre Erasmus à VIVES (Belgique) en Anglais.</em></p>
+        </div>
+    </div>
+</section>
+
 <footer id="contact">
-    <p>Intéressé par une collaboration ?</p>
-    <a href="mailto:ton-email@exemple.com">Me contacter</a>
-    <p class="copyright">&copy; 2026 - Tous droits réservés</p>
+    <h2>Me Contacter</h2>
+    <p>Ouvert aux opportunités de stage pour l'été 2026.</p>
+    <a href="mailto:lcheikhboukal@gmail.com" class="btn">lcheikhboukal@gmail.com</a> <div class="social-links">
+    <a href="https://www.linkedin.com/in/léo-cheikh-boukal-95b094330" target="_blank">LinkedIn</a> •
+    <a href="https://github.com/Leptar" target="_blank">GitHub</a> •
+    <a href="https://leptar.itch.io/" target="_blank">Itch.io</a>
+</div>
+    <p class="copyright">&copy; 2026 Léo Cheikh-Boukal</p>
 </footer>
 
 <script src="script.js"></script>
