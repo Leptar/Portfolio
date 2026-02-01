@@ -1,38 +1,38 @@
-﻿// Données mises à jour depuis ton CV "Cheikh-Boukal Léo CV FR-1"
+﻿// Data updated from your CV "Cheikh-Boukal Léo CV FR-1"
 const projects = [
     {
-        title: "Mini Moteur Physique",
-        description: "Développement d'un moteur physique en C++ avec OpenFramework : gestion des collisions et simulation dynamique dans le cadre d'un cours de R&D à l'UQAC.",
-        image: "assets/images/physics.jpg", // Mets une capture de tes formes géométriques
-        tags: ["C++", "OpenFramework", "Physique", "R&D"],
-        link: "#" // Pas de lien précisé dans le CV
+        title: "Mini Physics Engine",
+        description: "Development of a C++ physics engine using OpenFramework: collision handling and dynamic simulation within an R&D course at UQAC.",
+        image: "assets/images/physics.jpg",
+        tags: ["C++", "OpenFramework", "Physics", "R&D"],
+        link: "https://github.com/Leptar/AYLMoteurPhysique"
     },
     {
         title: "One Last Stake",
-        description: "Jeu créé sur Unreal Engine 5 en 48h pour la Wonderjam UQAC Automne 2025. Disponible sur Itch.io.",
+        description: "Game created on Unreal Engine 5 in 48h for the Wonderjam UQAC Fall 2025. Available on Itch.io.",
         image: "assets/images/stake.jpg",
         tags: ["Unreal Engine 5", "Game Jam", "48h", "C++"],
-        link: "https://leptar.itch.io/" // Lien général vers ton itch.io
+        link: "https://eyrone.itch.io/one-last-stake"
     },
     {
         title: "Borealis",
-        description: "Réalisation d'un prototype de jeu complet (Game Design & Code) dans le cadre d'un cours à l'UQAC.",
+        description: "Creation of a complete game prototype (Game Design & Code) as part of a university course at UQAC.",
         image: "assets/images/borealis.jpg",
         tags: ["UQAC", "Prototype", "Game Design"],
-        link: "https://leptar.itch.io/"
+        link: "https://tomdouaud.itch.io/borealis"
     },
     {
         title: "Violence is always the Answer",
-        description: "Jeu créé en 72h pour la Mini Jam 167 sur Godot. Classé et jouable en ligne.",
+        description: "Game created in 72h for the Mini Jam 167 on Godot. Ranked and playable online.",
         image: "assets/images/jam.jpg",
         tags: ["Godot", "Game Jam", "GDScript", "72h"],
-        link: "https://leptar.itch.io/"
+        link: "https://tomdouaud.itch.io/violence-is-always-the-anwser"
     }
 ];
 
 const container = document.getElementById('projects-container');
 
-// On vide le conteneur avant d'ajouter pour éviter les doublons si tu recharges
+// Clear container to avoid duplicates
 container.innerHTML = '';
 
 projects.forEach(project => {
@@ -41,9 +41,9 @@ projects.forEach(project => {
 
     const tagsHtml = project.tags.map(tag => `<span>${tag}</span>`).join('');
 
-    // Bouton conditionnel
+    // Conditional Button
     const linkHtml = project.link && project.link !== "#"
-        ? `<a href="${project.link}" target="_blank" class="project-link">Voir le projet →</a>`
+        ? `<a href="${project.link}" target="_blank" class="project-link">View Project →</a>`
         : '';
 
     card.innerHTML = `
