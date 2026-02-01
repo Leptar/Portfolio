@@ -10,7 +10,7 @@ const projects = [
     {
         title: "One Last Stake",
         description: "Game created on Unreal Engine 5 in 48h for the Wonderjam UQAC Fall 2025. Available on Itch.io.",
-        image: "assets/images/OnelastStake.png",
+        image: "assets/images/OneLastStake.png",
         tags: ["Unreal Engine 5", "Game Jam", "48h", "C++"],
         link: "https://eyrone.itch.io/one-last-stake"
     },
