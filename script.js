@@ -1,9 +1,9 @@
-﻿// Data updated from your CV "Cheikh-Boukal Léo CV FR-1"
+﻿// Data updated with correct image paths
 const projects = [
     {
         title: "Mini Physics Engine",
         description: "Development of a C++ physics engine using OpenFramework: collision handling and dynamic simulation within an R&D course at UQAC.",
-        image: "assets/images/moteur.png",
+        image: "assets/images/Moteur.png", // Attention à la majuscule 'M'
         tags: ["C++", "OpenFramework", "Physics", "R&D"],
         link: "https://github.com/Leptar/AYLMoteurPhysique"
     },
@@ -45,7 +45,6 @@ projects.forEach(project => {
         ? `<a href="${project.link}" target="_blank" class="project-link">View Project →</a>`
         : '';
 
-    // ICI : J'ai activé la balise <img>
     card.innerHTML = `
         <div class="image-container">
             <img src="${project.image}" alt="${project.title}">
