@@ -1,18 +1,25 @@
-﻿// Données extraites de ton CV
+﻿// Données mises à jour depuis ton CV "Cheikh-Boukal Léo CV FR-1"
 const projects = [
     {
-        title: "Borealis",
-        description: "Prototype de jeu réalisé dans le cadre d'un cours à l'UQAC. Disponible sur Itch.io.",
-        image: "assets/images/borealis.jpg", // Pense à mettre une capture d'écran ici
-        tags: ["UQAC", "Prototype", "Game Design"],
-        link: "https://leptar.itch.io/" // Lien vers ton itch.io global ou le jeu spécifique
+        title: "Mini Moteur Physique",
+        description: "Développement d'un moteur physique en C++ avec OpenFramework : gestion des collisions et simulation dynamique dans le cadre d'un cours de R&D à l'UQAC.",
+        image: "assets/images/physics.jpg", // Mets une capture de tes formes géométriques
+        tags: ["C++", "OpenFramework", "Physique", "R&D"],
+        link: "#" // Pas de lien précisé dans le CV
     },
     {
-        title: "Mini Moteur Physique",
-        description: "Réalisation d'un moteur physique en C++ avec OpenFramework : gestion des collisions et simulation dynamique.",
-        image: "assets/images/physics.jpg",
-        tags: ["C++", "OpenFramework", "Physique", "R&D"],
-        link: "#"
+        title: "One Last Stake",
+        description: "Jeu créé sur Unreal Engine 5 en 48h pour la Wonderjam UQAC Automne 2025. Disponible sur Itch.io.",
+        image: "assets/images/stake.jpg",
+        tags: ["Unreal Engine 5", "Game Jam", "48h", "C++"],
+        link: "https://leptar.itch.io/" // Lien général vers ton itch.io
+    },
+    {
+        title: "Borealis",
+        description: "Réalisation d'un prototype de jeu complet (Game Design & Code) dans le cadre d'un cours à l'UQAC.",
+        image: "assets/images/borealis.jpg",
+        tags: ["UQAC", "Prototype", "Game Design"],
+        link: "https://leptar.itch.io/"
     },
     {
         title: "Violence is always the Answer",
@@ -20,17 +27,13 @@ const projects = [
         image: "assets/images/jam.jpg",
         tags: ["Godot", "Game Jam", "GDScript", "72h"],
         link: "https://leptar.itch.io/"
-    },
-    {
-        title: "Pokemon TCG Manager",
-        description: "Application Android native en Full Kotlin développée en solo (Erasmus VIVES). Gestion de collection de cartes.",
-        image: "assets/images/pokemon-app.jpg",
-        tags: ["Kotlin", "Android", "Mobile", "Solo"],
-        link: "https://github.com/Leptar"
     }
 ];
 
 const container = document.getElementById('projects-container');
+
+// On vide le conteneur avant d'ajouter pour éviter les doublons si tu recharges
+container.innerHTML = '';
 
 projects.forEach(project => {
     const card = document.createElement('div');
@@ -38,7 +41,7 @@ projects.forEach(project => {
 
     const tagsHtml = project.tags.map(tag => `<span>${tag}</span>`).join('');
 
-    // J'ai ajouté un bouton "Voir le projet" si un lien existe
+    // Bouton conditionnel
     const linkHtml = project.link && project.link !== "#"
         ? `<a href="${project.link}" target="_blank" class="project-link">Voir le projet →</a>`
         : '';
