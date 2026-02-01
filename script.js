@@ -41,14 +41,15 @@ projects.forEach(project => {
 
     const tagsHtml = project.tags.map(tag => `<span>${tag}</span>`).join('');
 
-    // Conditional Button
     const linkHtml = project.link && project.link !== "#"
         ? `<a href="${project.link}" target="_blank" class="project-link">View Project →</a>`
         : '';
 
+    // ICI : J'ai activé la balise <img>
     card.innerHTML = `
-        <div class="image-placeholder" style="background-color: #333; height: 180px; border-radius: 4px; margin-bottom: 1rem;">
-            </div>
+        <div class="image-container">
+            <img src="${project.image}" alt="${project.title}">
+        </div>
         <h3>${project.title}</h3>
         <p>${project.description}</p>
         <div class="tags">${tagsHtml}</div>
