@@ -1,2 +1,2 @@
 # Portfolio
-This is my portfolio. I don't know what to say more.
+This is my portfolio. Is there anything more to say ?
