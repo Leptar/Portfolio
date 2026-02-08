@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Name | Léo Cheikh-Boukal</title>
+    <title>One Last Stake | Léo Cheikh-Boukal</title>
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -16,78 +16,97 @@
     </ul>
 </nav>
 
-<header class="project-header" style="--bg-image: url('../Assets/OnelastStake.png');">
+<header class="project-header" style="--bg-image: url('Assets/OnelastStake.png');">
     <div class="container">
-        <h1>Nom du Projet</h1> <p class="subtitle">Une phrase d'accroche ou le genre du jeu</p>
+        <h1>One Last Stake</h1> <p class="subtitle">Game for Automn WonderJam 2025</p>
 
         <div class="project-meta-grid">
             <div class="meta-item">
                 <span class="meta-label">Role</span>
-                <span class="meta-value">Lead Programmer / Solo Dev</span>
+                <span class="meta-value">Programmer/Game Designer</span>
             </div>
             <div class="meta-item">
                 <span class="meta-label">Duration</span>
-                <span class="meta-value">48 Hours / 3 Months</span>
+                <span class="meta-value">48 Hours</span>
             </div>
             <div class="meta-item">
                 <span class="meta-label">Status</span>
-                <span class="meta-value">Completed / Prototype</span>
+                <span class="meta-value">Completed / On Going</span>
             </div>
             <div class="meta-item">
                 <span class="meta-label">Technology</span>
-                <span class="meta-value">Unreal Engine 5, C++</span>
+                <span class="meta-value">Unreal Engine 5/ Godot</span>
             </div>
         </div>
 
         <div class="project-links">
-            <a href="#" target="_blank" class="btn">Play on Itch.io</a>
-            <a href="#" target="_blank" class="btn btn-outline">View Source Code</a>
+            <a href="https://eyrone.itch.io/one-last-stake" target="_blank" class="btn">Play on Itch.io</a>
+            <a href="#Gallery" target="_self" class="btn btn-outline">View Gallery</a>
         </div>
     </div>
 </header>
 
 <main class="container project-content">
 
-    <img src="../Assets/Borealis.png" alt="Main Project Screenshot" class="main-project-image">
-
     <div class="content-block">
         <h2>Project Description</h2>
         <p>
-            [Remplir ici : De quoi parle le jeu ? Quel est le but ?]
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            One Last Stake is a rogue-lite card game inspired by the classic game of "War." The core mechanic revolves 
+            around cheating: players must forge their cards by "subtly" applying stickers to alter their values and win 
+            hands.
+            <br/>
+            <br/>
+            The goal is to survive as long as possible through a series of battles, culminating in a final round. 
+            Between duels, players can visit the shop to buy stickers and upgrade their decks. However, opponents 
+            will not play fair—the AI also utilizes cheat mechanics to turn the tide. The game features entirely 
+            hand-drawn visuals.
+            <br/>
+            <br/>
+            Some team members remain motivated to rebuild the game from scratch using a more suitable engine for 2D 
+            development, such as Godot. We are currently in the planning phase of this remake!
         </p>
     </div>
 
     <div class="content-block">
         <h2>My Role & Contributions</h2>
         <p>
-            [Remplir ici : Qu'as-tu fait spécifiquement ?]
+            Game Programming & Design: Implemented core mechanics and managed the design and balancing of gameplay buffs
+            and debuffs.
         </p>
-        <ul>
-            <li>Implemented the character controller using C++.</li>
-            <li>Designed the inventory system structure using UStructs.</li>
-            <li>Optimized collision detection with a custom Quadtree.</li>
-        </ul>
     </div>
 
     <div class="content-block">
         <h2>Challenges & Learnings</h2>
         <p>
-            [Remplir ici : Quel bug t'a bloqué ? Qu'as-tu appris ?]
-            One major challenge was synchronizing physics over the network...
+            The primary challenge was balancing the game. Creating a card game is complex, especially 
+            when combining it with roguelike mechanics. Ensuring the game felt fair required extensive testing and the 
+            use of complex Excel spreadsheets to manage the data.
+            <br/>
+            <br/>
+            The second major hurdle was integrating everyone's contributions. We split tasks efficiently, but bringing 
+            the work of six people together caused numerous integration bugs. Merging the code and assets from a 
+            six-person team was... intense, to say the least.
         </p>
     </div>
 
-    <div class="content-block">
+    <div id="Gallery" class="content-block">
         <h2>Gallery & Code Snippets</h2>
         <div class="gallery-grid">
             <figure>
-                <img src="../Assets/OneLastStake.png" alt="Gameplay Screenshot">
-                <figcaption>Gameplay Loop</figcaption>
+                <img src="../Assets/OneLastStake2.png" alt="Gameplay Screenshot">
+                <figcaption>Gameplay Loop 1</figcaption>
             </figure>
             <figure>
-                <img src="../Assets/Moteur.png" alt="Code Editor Screenshot">
-                <figcaption>Physics Debugger View</figcaption>
+                <img src="../Assets/OneLastStake3.png" alt="Gameplay Screenshot">
+                <figcaption>Gameplay Loop 2</figcaption>
+            </figure>
+            <figure>
+                <img src="../Assets/OneLastStake1.png" alt="Code Editor Screenshot">
+                <figcaption>Excel for game design</figcaption>
+            </figure>
+            <figure>
+                <img src="../Assets/OneLastStake.png" alt="Code Editor Screenshot">
+                <figcaption>Title</figcaption>
             </figure>
         </div>
     </div>
