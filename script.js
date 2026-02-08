@@ -4,14 +4,14 @@
         description: "Development of a C++ physics engine using OpenFramework: collision handling and dynamic simulation within an R&D course at UQAC.",
         image: "Assets/Moteur.png", // Plus de dossier, juste le nom
         tags: ["C++", "OpenFramework", "Physics", "R&D"],
-        link: "https://github.com/Leptar/AYLMoteurPhysique"
+        link: "projects/Physics-Engine.html",
     },
     {
         title: "One Last Stake",
         description: "Game created on Unreal Engine 5 in 48h for the Wonderjam UQAC Fall 2025. Available on Itch.io.",
         image: "Assets/OnelastStake.png",
         tags: ["Unreal Engine 5", "Game Jam", "48h", "C++"],
-        link: "https://eyrone.itch.io/one-last-stake"
+        link: "projects/OnelastStake.html"
     },
     {
         title: "Borealis",
@@ -25,15 +25,15 @@
         description: "Game created in 72h for the Mini Jam 167 on Godot. Ranked and playable online.",
         image: "Assets/VIAS.png",
         tags: ["Godot", "Game Jam", "GDScript", "72h"],
-        link: "https://tomdouaud.itch.io/violence-is-always-the-anwser"
-    },
+        link: "projects/VIAS.html"
+    }/*,
     {
         title: "Corpjackers",
         description: "Game Prototype project, for UQAC classes. A mix between Guess who, and The Matriarch",
         image: "Assets/Corpjackers.png",
         tags: ["UE5", "Project", "Game Network", "Teamwork"],
-        link: "https://tomdouaud.itch.io/violence-is-always-the-anwser"
-    }
+        link: "projects/CorpJackers.html"
+    }*/
 ];
 
 const container = document.getElementById('projects-container');
