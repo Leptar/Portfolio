@@ -35,17 +35,61 @@ h2 {
 }
 
 /* Hero Section */
-header {
+header, .project-header{
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
     padding: 0 1rem;
+    position: relative;
+    overflow: hidden;
+    background-color: #0f172a;
 }
+
+header::before, .project-header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+
+    background-image: var(--bg-image);
+    background-position: center center;
+    background-size: cover;
+
+    filter: blur(4px);
+    transform: scale(1.1); /* Agrandir pour cacher les bords flous */
+    z-index: 0;
+}
+
+header::after, .project-header::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+
+    /* Dégradé sombre pour la lisibilité du texte */
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.6), #0f172a);
+    z-index: 1;
+}
+
+/* 4. Le contenu (Texte, Boutons) doit être au-dessus des calques */
+.hero-content, .container {
+    position: relative;
+    z-index: 2; /* Au premier plan */
+}
+
+/* Spécificités pour l'accueil */
 header h1 { font-size: 3rem; margin-bottom: 0.5rem; color: #ffffff; }
 header h2 { border: none; font-size: 1.5rem; color: #94a3b8; font-weight: normal; margin-top: 0; }
+
+/* Spécificités pour les pages projets (écraser la hauteur) */
+.project-header {
+    height: auto !important; /* Pas de 80vh pour les projets */
+    min-height: 50vh;
+    padding: 6rem 1rem;
+}
+
+.project-header h1 { font-size: 3.5rem; color: #38bdf8; margin-bottom: 0.5rem; }
+.subtitle { font-size: 1.5rem; color: #94a3b8; margin-bottom: 3rem; }
 
 .highlight {
     color: #38bdf8;
@@ -101,14 +145,6 @@ header h2 { border: none; font-size: 1.5rem; color: #94a3b8; font-weight: normal
 
 .skill-card h3 { color: #38bdf8; margin-top: 0; }
 .sub-skill { color: #94a3b8; font-size: 0.9rem; margin-top: 0.5rem; }
-
-/*!* Images projets *!
-.project-card img, .image-placeholder {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-}*/
 
 .project-card img {
     width: 100%;
@@ -181,7 +217,6 @@ footer {
     height: auto; /* On enlève la hauteur fixe de 80vh */
     min-height: 40vh;
     padding: 4rem 1rem;
-    background: radial-gradient(circle at bottom, #1e293b 0%, #0f172a 100%);
 }
 
 .project-header h1 {
