@@ -10,7 +10,7 @@
     {
         title: "One Last Stake",
         description: "Game created on Unreal Engine 5 in 48h for the Wonderjam UQAC Fall 2025. Available on Itch.io.",
-        image: "Assets/OnelastStake.png",
+        image: "Assets/OneLastStake.png",
         tags: ["Unreal Engine 5", "Game Jam", "48h", "C++"],
         link: "projects/OneLastStake.html",
         status: "On Going" 
