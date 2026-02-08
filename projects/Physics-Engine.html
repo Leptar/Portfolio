@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Name | Léo Cheikh-Boukal</title>
+    <title>Mini Physics Engine | Léo Cheikh-Boukal</title>
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -12,69 +12,75 @@
 <nav>
     <div class="logo">Léo.CB</div>
     <ul>
-        <li><a href="../index.html">← Back to Portfolio</a></li>
+        <li><a href="../index.html#projects">← Back to Portfolio</a></li>
     </ul>
 </nav>
 
-<header class="project-header" style="--bg-image: url('../Assets/OnelastStake.png');">
+<header class="project-header" style="--bg-image: url('Assets/Moteur.png');">
     <div class="container">
-        <h1>Nom du Projet</h1> <p class="subtitle">Une phrase d'accroche ou le genre du jeu</p>
+        <h1>Mini Physics Engine</h1> <p class="subtitle">On OpenFramework, we try to recreate simple physics</p>
 
         <div class="project-meta-grid">
             <div class="meta-item">
                 <span class="meta-label">Role</span>
-                <span class="meta-value">Lead Programmer / Solo Dev</span>
+                <span class="meta-value">Programmer</span>
             </div>
             <div class="meta-item">
                 <span class="meta-label">Duration</span>
-                <span class="meta-value">48 Hours / 3 Months</span>
+                <span class="meta-value">4 months (session)</span>
             </div>
             <div class="meta-item">
                 <span class="meta-label">Status</span>
-                <span class="meta-value">Completed / Prototype</span>
+                <span class="meta-value">Completed (for now)</span>
             </div>
             <div class="meta-item">
                 <span class="meta-label">Technology</span>
-                <span class="meta-value">Unreal Engine 5, C++</span>
+                <span class="meta-value">C++, OpenFramework</span>
             </div>
         </div>
 
         <div class="project-links">
-            <a href="#" target="_blank" class="btn">Play on Itch.io</a>
-            <a href="#" target="_blank" class="btn btn-outline">View Source Code</a>
+            <a href="https://github.com/Leptar/AYLMoteurPhysique" target="_blank" class="btn">See on Github</a>
         </div>
     </div>
 </header>
 
 <main class="container project-content">
-
-    <img src="../Assets/Borealis.png" alt="Main Project Screenshot" class="main-project-image">
-
     <div class="content-block">
         <h2>Project Description</h2>
         <p>
-            [Remplir ici : De quoi parle le jeu ? Quel est le but ?]
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            &nbsp;&nbsp;&nbsp;&nbsp;The goal of this project was to apply our knowledge of mathematics for video games by creating a mini 
+            physics simulation. The project consisted of four increasingly complex stages, progressing from 2D to 3D.
+            It was developed by a team of three, including myself.
         </p>
     </div>
 
     <div class="content-block">
         <h2>My Role & Contributions</h2>
         <p>
-            [Remplir ici : Qu'as-tu fait spécifiquement ?]
+            &nbsp;&nbsp;&nbsp;&nbsp;We built the engine as a team of three. My primary focus was implementing the necessary physics and 
+            mathematical calculations to drive the simulation, specifically creating classes for Forces, Springs, 
+            Rotation Matrices, and 2D/3D Vectors. I also spent a significant amount of time debugging alongside my 
+            coding partner. Despite the impressive number of physics-related bugs we encountered, we ultimately 
+            delivered a solid project.
         </p>
         <ul>
-            <li>Implemented the character controller using C++.</li>
-            <li>Designed the inventory system structure using UStructs.</li>
-            <li>Optimized collision detection with a custom Quadtree.</li>
+            <li>Collaborated within a team of three to build the custom physics engine from scratch.</li>
+            <li>Focused on implementing the core mathematical classes required for the simulation.</li>
+            <li>Worked extensively with a coding partner to debug complex physics interactions.</li>
         </ul>
     </div>
 
     <div class="content-block">
         <h2>Challenges & Learnings</h2>
         <p>
-            [Remplir ici : Quel bug t'a bloqué ? Qu'as-tu appris ?]
-            One major challenge was synchronizing physics over the network...
+            The main challenge was the complexity of using OpenFrameworks. Since the course requirement was to manually
+            re-implement features that already existed within the framework (such as vectors and matrices), adapting our
+            custom code to generate a visual render was a significant hurdle for the team. 
+            <br/>
+            The second major challenge was the substantial workload required to deliver a coherent and functional 
+            project. If a team member was unavailable, picking up their slack became exhausting, especially as the 
+            complexity of the work increased.
         </p>
     </div>
 
@@ -82,12 +88,20 @@
         <h2>Gallery & Code Snippets</h2>
         <div class="gallery-grid">
             <figure>
-                <img src="../Assets/OneLastStake.png" alt="Gameplay Screenshot">
-                <figcaption>Gameplay Loop</figcaption>
+                <img src="../Assets/Moteur1.png" alt="Gameplay Screenshot">
+                <figcaption>Quadtree Test</figcaption>
             </figure>
             <figure>
-                <img src="../Assets/Moteur.png" alt="Code Editor Screenshot">
-                <figcaption>Physics Debugger View</figcaption>
+                <img src="../Assets/Moteur2.png" alt="Code Editor Screenshot">
+                <figcaption>Parameters from rigidbody</figcaption>
+            </figure>
+            <figure>
+                <img src="../Assets/Moteur5.png" alt="Code Editor Screenshot">
+                <figcaption>Project Architecture</figcaption>
+            </figure>
+            <figure>
+                <img src="../Assets/Moteur4.png" alt="Code Editor Screenshot">
+                <figcaption>Theory from class</figcaption>
             </figure>
         </div>
     </div>

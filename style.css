@@ -299,3 +299,46 @@ footer {
     font-size: 0.9rem;
     font-style: italic;
 }
+
+.image-container {
+    position: relative;
+    overflow: hidden; /* Pour que le badge ne dépasse pas des coins arrondis si besoin */
+    border-radius: 4px;
+}
+
+.status-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 10px;
+    border-radius: 20px; /* Forme de pilule */
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff; /* Texte blanc par défaut */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Petite ombre pour lisibilité */
+    z-index: 10;
+}
+
+/* --- Codes Couleurs --- */
+
+/* Vert pour Terminé */
+.status-completed {
+    background-color: #10b981;
+}
+
+/* Orange/Jaune pour En cours (On Going) */
+.status-on-going {
+    background-color: #f59e0b;
+}
+
+/* Gris ou Rouge pour Abandonné */
+.status-abandoned {
+    background-color: #64748b; /* Gris neutre */
+    /* background-color: #ef4444; /* Ou Rouge si tu préfères */
+}
+
+/* Bleu/Violet pour Prototype */
+.status-prototype {
+    background-color: #8b5cf6;
+}
