@@ -353,3 +353,9 @@ footer {
 .status-prototype {
     background-color: #8b5cf6;
 }
+
+.btn-disabled {
+    pointer-events: none; /* Empêche le clic */
+    opacity: 0.5;        /* Style visuel grisé */
+    cursor: not-allowed;
+}
