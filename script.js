@@ -3,7 +3,7 @@ const projectsData = {
                 {
             title: "Night & Shift",
             description: "Inspired by Five Nights at Freddy's and Willy's Wonderland, Night & Shift thrusts you into a tense horror experience. Student project (Unreal Engine).",
-            image: "https://img.itch.zone/aW1nLzI4MTQ2ODU0LnBuZw==/original/OEW+vv.png",
+            image: "Assets/NS_image.png",
             tags: ["Unreal Engine", "Horror", "Student Project", "First-Person"],
             link: "projects/NightAndShift.html",
             status: "Completed"
