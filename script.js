@@ -13,7 +13,7 @@
         image: "Assets/OneLastStake.png",
         tags: ["Unreal Engine 5", "Game Jam", "48h", "C++"],
         link: "projects/OneLastStake.html",
-        status: "On Going" 
+        status: "Completed"
     },
     {
         title: "Borealis",
@@ -30,6 +30,14 @@
         tags: ["Godot", "Game Jam", "GDScript", "72h"],
         link: "projects/VIAS.html",
         status: "Completed" 
+    },
+    {
+        title: "Meteo VR Project",
+        description: "Project created to learn basics technologies in Unity VR (OpenXR), with a context of an Meteo application.",
+        image: "Assets/MeteoVR.png",
+        tags: ["Unity", "Student Project", "VR", "C#"],
+        link: "projects/MeteoVR.html",
+        status: "Completed"
     }/*,
     {
         title: "Corpjackers",
