@@ -11,10 +11,14 @@
 
 <nav>
     <div class="logo">
-        <img src="../Assets/LogoLCB.png" alt="// LCB Logo">
+        <a href="../index.html" class="logo-link">
+            <img src="../Assets/LogoLCB.png" alt="// LCB Logo">
+            <span class="site-title">Léo Cheikh-Boukal</span>
+        </a>
     </div>
     <ul>
-        <li><a href="../index.html">← Back to Portfolio</a></li>
+        <li><a href="../index.html"><span data-i18n="nav.back">← Back to Portfolio</span></a></li>
+        <li><button id="lang-toggle" class="lang-btn">FR</button></li>
     </ul>
 </nav>
 
@@ -24,19 +28,19 @@
 
         <div class="project-meta-grid">
             <div class="meta-item">
-                <span class="meta-label">Role</span>
+                <span class="meta-label" data-i18n="project.meta.role">Role</span>
                 <span class="meta-value">Programmer / VR Integration</span>
             </div>
             <div class="meta-item">
-                <span class="meta-label">Duration</span>
+                <span class="meta-label" data-i18n="project.meta.duration">Duration</span>
                 <span class="meta-value">2 months</span>
             </div>
             <div class="meta-item">
-                <span class="meta-label">Status</span>
+                <span class="meta-label" data-i18n="project.meta.status">Status</span>
                 <span class="meta-value">Completed </span>
             </div>
             <div class="meta-item">
-                <span class="meta-label">Technology</span>
+                <span class="meta-label" data-i18n="project.meta.technology">Technology</span>
                 <span class="meta-value">Unity, C#, Open XR</span>
             </div>
         </div>
@@ -51,7 +55,7 @@
 <main class="container project-content">
 
     <div class="content-block">
-        <h2>Project Description</h2>
+        <h2 data-i18n="project.desc.title">Project Description</h2>
         <p>
             This project was the central theme of our course. The goal was to learn how to use Unity VR and
             implement it in a project context. In this case, it was a VR weather app. My classmate and I decided
@@ -62,7 +66,7 @@
     </div>
 
     <div class="content-block">
-        <h2>My Role & Contributions</h2>
+        <h2 data-i18n="project.role.title">My Role & Contributions</h2>
         <p>
             As a programmer with the necessary equipment at home, I've integrated VR and interactive elements in the scene.
             This includes the UI, which uses the weather script to change the weather.
@@ -71,11 +75,11 @@
             <li>Implement VR features</li>
             <li>Add VR interaction elements</li>
             <li>Implement a UI linked to the weather script</li>
-        </ul>
+    </ul>
     </div>
 
     <div class="content-block">
-        <h2>Challenges & Learnings</h2>
+        <h2 data-i18n="project.challenges.title">Challenges & Learnings</h2>
         <p>
             My main challenge remains VR itself and its integration. Even though our instructor provided us with all the
             necessary documentation to implement certain concepts, such as Unity’s fixed UI,
@@ -88,7 +92,7 @@
     </div>
 
     <div class="content-block">
-        <h2>Gallery & Code Snippets</h2>
+        <h2 data-i18n="project.gallery.title">Gallery & Code Snippets</h2>
         <div class="gallery-grid">
             <figure>
                 <img src="../Assets/MeteoVR1.png" alt="View Editor 1">
@@ -109,8 +113,10 @@
 </main>
 
 <footer id="contact">
-    <p class="copyright">&copy; 2026 Léo Cheikh-Boukal</p>
+    <p class="copyright" data-i18n="contact.rights">&copy; 2026 Léo Cheikh-Boukal - All rights reserved</p>
 </footer>
 
+<script src="../translations.js"></script>
+<script src="../i18n.js"></script>
 </body>
 </html>

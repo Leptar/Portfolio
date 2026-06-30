@@ -11,10 +11,14 @@
 
 <nav>
     <div class="logo">
-        <img src="../Assets/LogoLCB.png" alt="// LCB Logo">
+        <a href="../index.html" class="logo-link">
+            <img src="../Assets/LogoLCB.png" alt="// LCB Logo">
+            <span class="site-title">Léo Cheikh-Boukal</span>
+        </a>
     </div>
     <ul>
-        <li><a href="../index.html#projects">← Back to Portfolio</a></li>
+        <li><a href="../index.html#projects"><span data-i18n="nav.back">← Back to Portfolio</span></a></li>
+        <li><button id="lang-toggle" class="lang-btn">FR</button></li>
     </ul>
 </nav>
 
@@ -24,71 +28,34 @@
 
         <div class="project-meta-grid">
             <div class="meta-item">
-                <span class="meta-label">Role</span>
+                <span class="meta-label" data-i18n="project.meta.role">Role</span>
                 <span class="meta-value">Programmer</span>
             </div>
             <div class="meta-item">
-                <span class="meta-label">Duration</span>
+                <span class="meta-label" data-i18n="project.meta.duration">Duration</span>
                 <span class="meta-value">4 months (session)</span>
             </div>
             <div class="meta-item">
-                <span class="meta-label">Status</span>
+                <span class="meta-label" data-i18n="project.meta.status">Status</span>
                 <span class="meta-value">Completed (for now)</span>
             </div>
             <div class="meta-item">
-                <span class="meta-label">Technology</span>
+                <span class="meta-label" data-i18n="project.meta.technology">Technology</span>
                 <span class="meta-value">C++, OpenFramework</span>
             </div>
         </div>
 
         <div class="project-links">
-            <a href="https://github.com/Leptar/AYLMoteurPhysique" target="_blank" class="btn">See on Github</a>
-            <a href="#Gallery" target="_self" class="btn btn-outline">View Gallery</a>
+            <a href="https://github.com/Leptar/AYLMoteurPhysique" target="_blank" class="btn" data-i18n="project.see_github">See on Github</a>
+            <a href="#Gallery" target="_self" class="btn btn-outline" data-i18n="project.view_gallery">View Gallery</a>
         </div>
     </div>
 </header>
 
 <main class="container project-content">
-    <div class="content-block">
-        <h2>Project Description</h2>
-        <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;The goal of this project was to apply our knowledge of mathematics for video games by creating a mini 
-            physics simulation. The project consisted of four increasingly complex stages, progressing from 2D to 3D.
-            It was developed by a team of three, including myself.
-        </p>
-    </div>
-
-    <div class="content-block">
-        <h2>My Role & Contributions</h2>
-        <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;We built the engine as a team of three. My primary focus was implementing the necessary physics and 
-            mathematical calculations to drive the simulation, specifically creating classes for Forces, Springs, 
-            Rotation Matrices, and 2D/3D Vectors. I also spent a significant amount of time debugging alongside my 
-            coding partner. Despite the impressive number of physics-related bugs we encountered, we ultimately 
-            delivered a solid project.
-        </p>
-        <ul>
-            <li>Collaborated within a team of three to build the custom physics engine from scratch.</li>
-            <li>Focused on implementing the core mathematical classes required for the simulation.</li>
-            <li>Worked extensively with a coding partner to debug complex physics interactions.</li>
-        </ul>
-    </div>
-
-    <div class="content-block">
-        <h2>Challenges & Learnings</h2>
-        <p>
-            The main challenge was the complexity of using OpenFrameworks. Since the course requirement was to manually
-            re-implement features that already existed within the framework (such as vectors and matrices), adapting our
-            custom code to generate a visual render was a significant hurdle for the team. 
-            <br/>
-            The second major challenge was the substantial workload required to deliver a coherent and functional 
-            project. If a team member was unavailable, picking up their slack became exhausting, especially as the 
-            complexity of the work increased.
-        </p>
-    </div>
 
     <div id="Gallery" class="content-block">
-        <h2>Gallery & Code Snippets</h2>
+        <h2 data-i18n="project.gallery.title">Gallery & Code Snippets</h2>
         <div class="gallery-grid">
             <figure>
                 <img src="../Assets/Moteur1.png" alt="Gameplay Screenshot">
@@ -109,11 +76,53 @@
         </div>
     </div>
 
+    <div class="content-block">
+        <h2 data-i18n="project.desc.title">Project Description</h2>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;The goal of this project was to apply our knowledge of mathematics for video games by creating a mini 
+            physics simulation. The project consisted of four increasingly complex stages, progressing from 2D to 3D.
+            It was developed by a team of three, including myself.
+        </p>
+    </div>
+
+    <div class="content-block">
+        <h2 data-i18n="project.role.title">My Role & Contributions</h2>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;We built the engine as a team of three. My primary focus was implementing the necessary physics and 
+            mathematical calculations to drive the simulation, specifically creating classes for Forces, Springs, 
+            Rotation Matrices, and 2D/3D Vectors. I also spent a significant amount of time debugging alongside my 
+            coding partner. Despite the impressive number of physics-related bugs we encountered, we ultimately 
+            delivered a solid project.
+        </p>
+        <ul>
+            <li>Collaborated within a team of three to build the custom physics engine from scratch.</li>
+            <li>Focused on implementing the core mathematical classes required for the simulation.</li>
+            <li>Worked extensively with a coding partner to debug complex physics interactions.</li>
+    </ul>
+    </div>
+
+    <div class="content-block">
+        <h2 data-i18n="project.challenges.title">Challenges & Learnings</h2>
+        <p>
+            The main challenge was the complexity of using OpenFrameworks. Since the course requirement was to manually
+            re-implement features that already existed within the framework (such as vectors and matrices), adapting our
+            custom code to generate a visual render was a significant hurdle for the team. 
+            <br/>
+            The second major challenge was the substantial workload required to deliver a coherent and functional 
+            project. If a team member was unavailable, picking up their slack became exhausting, especially as the 
+            complexity of the work increased.
+        </p>
+    </div>
+
+
+
 </main>
 
 <footer id="contact">
-    <p class="copyright">&copy; 2026 Léo Cheikh-Boukal</p>
+    <p class="copyright" data-i18n="contact.rights">&copy; 2026 Léo Cheikh-Boukal - All rights reserved</p>
 </footer>
 
+<script src="../translations.js"></script>
+<script src="../i18n.js"></script>
 </body>
 </html>

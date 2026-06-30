@@ -11,24 +11,28 @@
 
 <nav>
     <div class="logo">
-        <img src="Assets/LogoLCB.png" alt="// LCB Logo">
+        <a href="index.html" class="logo-link">
+            <img src="Assets/LogoLCB.png" alt="// LCB Logo">
+            <span class="site-title">Léo Cheikh-Boukal</span>
+        </a>
     </div>
     <ul>
-        <li><a href="#about">Profile</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-i18n="nav.profile">Profile</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#education" data-i18n="nav.education">Education</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        <li><button id="lang-toggle" class="lang-btn">FR</button></li>
     </ul>
 </nav>
 
 <header id="about" style="--bg-image: url('Assets/baniere_accueil.png');">
     <div class="hero-content">
         <h1>Léo Cheikh-Boukal</h1>
-        <h2>Master's Student in Game Development (UQAC)</h2>
-        <p class="highlight">Looking for an internship (Engine / Gameplay Programming) starting July 2026</p>
+        <h2 data-i18n="hero.role">Master's Student in Game Development (UQAC)</h2>
+        <p class="highlight" data-i18n="hero.looking_for">Looking for an internship (Engine / Gameplay Programming) to complete my Master's degree</p>
         <div class="hero-btns">
-            <a href="#contact" class="btn">Contact Me</a>
+            <a href="#contact" class="btn" data-i18n="hero.contact_me">Contact Me</a>
             <a href="https://github.com/Leptar" target="_blank" class="btn btn-outline">GitHub</a>
             <a href="https://leptar.itch.io/" target="_blank" class="btn btn-outline">Itch.io</a>
         </div>
@@ -36,61 +40,63 @@
 </header>
 
 <section id="skills" class="container">
-    <h2>Technical Skills</h2>
+    <h2 data-i18n="skills.title">Technical Skills</h2>
     <div class="skills-grid">
         <div class="skill-card">
-            <h3>Engines & Tools</h3>
+            <h3 data-i18n="skills.engines">Engines & Tools</h3>
             <p>Unreal Engine 5, Godot, Unity</p>
             <p class="sub-skill">Perforce, Git, Jira, Jetbrains Toolbox</p>
         </div>
         <div class="skill-card">
-            <h3>Languages</h3>
+            <h3 data-i18n="skills.languages">Languages</h3>
             <p>C++, C#, Python, GDScript, OpenFramework</p>
             <p class="sub-skill">SQL, PHP, Bash, Kotlin (Android), Vulkan, Java</p>
         </div>
         <div class="skill-card">
-            <h3>Expertise</h3>
-            <p>Algorithmic Design, Optimization, Network Programming</p>
-            <p class="sub-skill">OOP, Agile Method, R&D</p>
+            <h3 data-i18n="skills.expertise">Expertise</h3>
+            <p data-i18n="skills.expertise.desc">Algorithmic Design, Optimization, Network Programming</p>
+            <p class="sub-skill" data-i18n="skills.expertise.sub">OOP, Agile Method, R&D</p>
         </div>
     </div>
 </section>
 
 <section id="projects" class="container">
-    <h2>Selected Projects</h2>
+    <h2 data-i18n="projects.title">Selected Projects</h2>
     <div class="projects-grid" id="projects-container">
     </div>
 </section>
 
 <section id="education" class="container">
-    <h2>Education</h2>
+    <h2 data-i18n="education.title">Education</h2>
     <div class="timeline">
         <div class="timeline-item">
-            <h3>Master's in Game Development</h3>
-            <span class="date">2025 - 2027 (In Progress)</span>
-            <p>UQAC (University of Quebec at Chicoutimi), Canada.</p>
+            <h3 data-i18n="education.master">Master's in Game Development</h3>
+            <span class="date" data-i18n="education.master.date">2025 - 2027 (In Progress)</span>
+            <p data-i18n="education.master.desc">UQAC (University of Quebec at Chicoutimi), Canada.</p>
         </div>
         <div class="timeline-item">
-            <h3>Dual Degree: Bachelor's in Game Dev & Computer Science</h3>
+            <h3 data-i18n="education.bachelor">Dual Degree: Bachelor's in Game Dev & Computer Science</h3>
             <span class="date">2022 - 2025</span>
-            <p>UQAC (Canada) and IUT de Rodez (France).</p>
-            <p><em>Includes an Erasmus semester at VIVES (Belgium) in English.</em></p>
+            <p data-i18n="education.bachelor.desc">UQAC (Canada) and IUT de Rodez (France).</p>
+            <p data-i18n="education.bachelor.sub"><em>Includes an Erasmus semester at VIVES (Belgium) in English.</em></p>
         </div>
     </div>
 </section>
 
 <footer id="contact">
-    <h2>Contact Me</h2>
-    <p>Open to internship opportunities for Summer 2026.</p>
+    <h2 data-i18n="contact.title">Contact Me</h2>
+    <p data-i18n="contact.desc">Open to internship opportunities to complete my Master's degree.</p>
     <a href="mailto:lcheikhboukal@gmail.com" class="btn">lcheikhboukal@gmail.com</a>
     <div class="social-links">
         <a href="https://www.linkedin.com/in/léo-cheikh-boukal-95b094330" target="_blank">LinkedIn</a> •
         <a href="https://github.com/Leptar" target="_blank">GitHub</a> •
         <a href="https://leptar.itch.io/" target="_blank">Itch.io</a>
     </div>
-    <p class="copyright">&copy; 2026 Léo Cheikh-Boukal - All rights reserved</p>
+    <p class="copyright" data-i18n="contact.rights">&copy; 2026 Léo Cheikh-Boukal - All rights reserved</p>
 </footer>
 
+<script src="translations.js"></script>
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night & Shift | Léo Cheikh-Boukal</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <a href="../index.html" class="logo-link">
+            <img src="../Assets/LogoLCB.png" alt="// LCB Logo">
+            <span class="site-title">Léo Cheikh-Boukal</span>
+        </a>
+    </div>
+    <ul>
+        <li><a href="../index.html"><span data-i18n="nav.back">← Back to Portfolio</span></a></li>
+        <li><button id="lang-toggle" class="lang-btn">FR</button></li>
+    </ul>
+</nav>
+
+<header class="project-header" style="--bg-image: url('https://img.itch.zone/aW1nLzI4MTQ2ODU0LnBuZw==/original/OEW+vv.png');">
+    <div class="container">
+        <h1>Night & Shift</h1> <p class="subtitle" data-i18n="nas.subtitle">The shift is over. The nightmare begins.</p>
+
+        <div class="project-meta-grid">
+            <div class="meta-item">
+                <span class="meta-label" data-i18n="project.meta.role">Role</span>
+                <span class="meta-value" data-i18n="nas.role">Gameplay Programmer & Systems</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label" data-i18n="project.meta.duration">Duration</span>
+                <span class="meta-value" data-i18n="nas.duration">2 Months</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label" data-i18n="project.meta.status">Status</span>
+                <span class="meta-value">Completed</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label" data-i18n="project.meta.technology">Technology</span>
+                <span class="meta-value">Unreal Engine</span>
+            </div>
+        </div>
+
+        <div class="project-links">
+            <a href="https://leptar.itch.io/nightandshift" target="_blank" class="btn" data-i18n="project.play_itch">Play on Itch.io</a>
+            <a href="#Gallery" target="_self" class="btn btn-outline" data-i18n="project.view_gallery">View Gallery</a>
+        </div>
+    </div>
+</header>
+
+<main class="container project-content">
+
+    <div id="Gallery" class="content-block">
+        <h2 data-i18n="project.gallery.title">Gallery & Code Snippets</h2>
+        <div class="gallery-grid">
+            <figure>
+                <img src="https://img.itch.zone/aW1hZ2UvNDcxOTA4MS8yODE0Njc0MC5wbmc=/347x500/SksQ05.png" alt="Gameplay Screenshot 1">
+                <figcaption>Gameplay</figcaption>
+            </figure>
+            <figure>
+                <img src="https://img.itch.zone/aW1hZ2UvNDcxOTA4MS8yODE0NjczNy5wbmc=/347x500/Co1tbm.png" alt="Gameplay Screenshot 2">
+                <figcaption>Gameplay</figcaption>
+            </figure>
+            <figure>
+                <img src="https://img.itch.zone/aW1hZ2UvNDcxOTA4MS8yODE0NjczOC5wbmc=/347x500/nxLCVy.png" alt="Gameplay Screenshot 3">
+                <figcaption>Gameplay</figcaption>
+            </figure>
+            <figure>
+                <img src="https://img.itch.zone/aW1hZ2UvNDcxOTA4MS8yODE0NjczOS5wbmc=/347x500/JioVZr.png" alt="Gameplay Screenshot 4">
+                <figcaption>Gameplay</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="content-block">
+        <h2 data-i18n="project.desc.title">Project Description</h2>
+        <p data-i18n="nas.desc1">
+            Inspired by Five Nights at Freddy's and Willy's Wonderland, Night & Shift thrusts you into a tense horror experience where a single moment of inattention can be fatal. This game is a student project developed over 2 months at the University of Quebec at Chicoutimi (UQAC) using Unreal Engine.
+        </p>
+        <p data-i18n="nas.desc2">
+            The Story: Your former boss is desperate. His staff quit without a word, the diner was packed all weekend, and he desperately needs someone to clean up the mess. Being the good former employee you are, you agree to help out for a few hours. After all, the pay is good and the job is simple: mop the floors, do the dishes, and take out the trash. But in the dead of night, the diner isn't as empty as it seems. Something is roaming in the dark. Something is watching you.
+        </p>
+        <ul style="list-style-type: none; padding-left: 0;">
+            <li data-i18n="nas.bullet1"><strong>Do Your Job:</strong> Complete various cleaning chores through a system of dynamic QTEs. Keep your focus on the task at hand, but always keep an ear out for footsteps.</li>
+            <li data-i18n="nas.bullet2"><strong>Hide to Survive:</strong> You are completely unarmed. If the creature gets too close, your only option is to find a hiding spot and pray it doesn't see you.</li>
+            <li data-i18n="nas.bullet3"><strong>Survive the Weekend:</strong> Make it through Friday, Saturday, and Sunday night. The tension ramps up as the nights progress.</li>
+        </ul>
+    </div>
+
+    <div class="content-block">
+        <h2 data-i18n="project.role.title">My Role & Contributions</h2>
+        <p data-i18n="nas.role_desc">
+            As a Gameplay Programmer & Systems developer, I focused on implementing the core systems and mechanics that drive the horror and gameplay loops. Detailed contributions will be added soon.
+        </p>
+    </div>
+
+</main>
+
+<footer id="contact">
+    <p class="copyright" data-i18n="contact.rights">&copy; 2026 Léo Cheikh-Boukal - All rights reserved</p>
+</footer>
+
+<script src="../translations.js"></script>
+<script src="../i18n.js"></script>
+</body>
+</html>
