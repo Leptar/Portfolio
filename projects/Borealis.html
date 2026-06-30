@@ -11,10 +11,14 @@
 
 <nav>
     <div class="logo">
-        <img src="../Assets/LogoLCB.png" alt="// LCB Logo">
+        <a href="../index.html" class="logo-link">
+            <img src="../Assets/LogoLCB.png" alt="// LCB Logo">
+            <span class="site-title">Léo Cheikh-Boukal</span>
+        </a>
     </div>
     <ul>
-        <li><a href="../index.html#projects">← Back to Portfolio</a></li>
+        <li><a href="../index.html#projects"><span data-i18n="nav.back">← Back to Portfolio</span></a></li>
+        <li><button id="lang-toggle" class="lang-btn">FR</button></li>
     </ul>
 </nav>
 
@@ -25,25 +29,25 @@
 
         <div class="project-meta-grid">
             <div class="meta-item">
-                <span class="meta-label">Role</span>
+                <span class="meta-label" data-i18n="project.meta.role">Role</span>
                 <span class="meta-value">Gameplay Programmer</span>
             </div>
             <div class="meta-item">
-                <span class="meta-label">Duration</span>
+                <span class="meta-label" data-i18n="project.meta.duration">Duration</span>
                 <span class="meta-value">4 months (session)</span>
             </div>
             <div class="meta-item">
-                <span class="meta-label">Status</span>
+                <span class="meta-label" data-i18n="project.meta.status">Status</span>
                 <span class="meta-value">Completed / Prototype</span>
             </div>
             <div class="meta-item">
-                <span class="meta-label">Technology</span>
+                <span class="meta-label" data-i18n="project.meta.technology">Technology</span>
                 <span class="meta-value">Unreal Engine 5, C++</span>
             </div>
         </div>
 
         <div class="project-links">
-            <a href="https://tomdouaud.itch.io/borealis" target="_blank" class="btn">Play on Itch.io</a>
+            <a href="https://tomdouaud.itch.io/borealis" target="_blank" class="btn" data-i18n="project.play_itch">Play on Itch.io</a>
             <a href="#Galerie" target="_self" class="btn btn-outline">View Galerie</a>
         </div>
     </div>
@@ -51,7 +55,7 @@
 
 <main class="container project-content">
     <div class="content-block">
-        <h2>Project Description</h2>
+        <h2 data-i18n="project.desc.title">Project Description</h2>
         <p>
             &nbsp&nbsp&nbsp&nbspPrototype of the first game pitch for UQAC's Video Game Production course, created in collaboration with students from NAD-UQAC and DIM. The assignment was to create a game centered on a hero's journey with a companion.
              <br/>
@@ -60,7 +64,7 @@
     </div>
 
     <div class="content-block">
-        <h2>My Role & Contributions</h2>
+        <h2 data-i18n="project.role.title">My Role & Contributions</h2>
         <p>
             &nbsp;&nbsp;&nbsp;&nbsp;As a Gameplay Programmer on this project, I focused on implementing specific puzzle mechanics, such as the movable cubes and their interaction with switches. Beyond these core features, I played a significant role in debugging the wider game, helping to fix issues with the companion's navigation (A to B movement), object destruction, and gamepad inputs. It was a highly collaborative environment where every developer touched different parts of the project.
         </p>
@@ -69,11 +73,11 @@
             <li>Contributed to general debugging and polish across various features.</li>
             <li>Assisted in debugging companion AI behaviors (movement, object destruction) and controller input support.</li>
             <li>Collaborated in a cross-functional environment where developers shared responsibilities across the codebase.</li>
-        </ul>
+    </ul>
     </div>
 
     <div class="content-block">
-        <h2>Challenges & Learnings</h2>
+        <h2 data-i18n="project.challenges.title">Challenges & Learnings</h2>
         <p>
             <strong>Teamwork & Coordination :</strong> The main challenge of this project was undoubtedly teamwork. It was my first experience with such a large team and my first collaboration with NAD-UQAC. Communication was difficult, and coordinating tasks between the different disciplines was complicated. However, we managed to deliver a solid prototype. I learned that while working in a team seems simple in theory, coordinating tasks and maintaining constant communication is essential to avoid conflicts.
             <br/>
@@ -99,8 +103,10 @@
 </main>
 
 <footer id="contact">
-    <p class="copyright">&copy; 2026 Léo Cheikh-Boukal</p>
+    <p class="copyright" data-i18n="contact.rights">&copy; 2026 Léo Cheikh-Boukal - All rights reserved</p>
 </footer>
 
+<script src="../translations.js"></script>
+<script src="../i18n.js"></script>
 </body>
 </html>

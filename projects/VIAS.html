@@ -11,10 +11,14 @@
 
 <nav>
     <div class="logo">
-        <img src="../Assets/LogoLCB.png" alt="// LCB Logo">
+        <a href="../index.html" class="logo-link">
+            <img src="../Assets/LogoLCB.png" alt="// LCB Logo">
+            <span class="site-title">Léo Cheikh-Boukal</span>
+        </a>
     </div>
     <ul>
-        <li><a href="../index.html">← Back to Portfolio</a></li>
+        <li><a href="../index.html"><span data-i18n="nav.back">← Back to Portfolio</span></a></li>
+        <li><button id="lang-toggle" class="lang-btn">FR</button></li>
     </ul>
 </nav>
 
@@ -24,76 +28,34 @@
 
         <div class="project-meta-grid">
             <div class="meta-item">
-                <span class="meta-label">Role</span>
+                <span class="meta-label" data-i18n="project.meta.role">Role</span>
                 <span class="meta-value">Programmer / Level Designer</span>
             </div>
             <div class="meta-item">
-                <span class="meta-label">Duration</span>
+                <span class="meta-label" data-i18n="project.meta.duration">Duration</span>
                 <span class="meta-value">48 Hours</span>
             </div>
             <div class="meta-item">
-                <span class="meta-label">Status</span>
+                <span class="meta-label" data-i18n="project.meta.status">Status</span>
                 <span class="meta-value">Completed</span>
             </div>
             <div class="meta-item">
-                <span class="meta-label">Technology</span>
+                <span class="meta-label" data-i18n="project.meta.technology">Technology</span>
                 <span class="meta-value">Godot / GDScript</span>
             </div>
         </div>
 
         <div class="project-links">
-            <a href="https://tomdouaud.itch.io/violence-is-always-the-anwser" target="_blank" class="btn">Play on Itch.io</a>
-            <a href="#Gallery" target="_self" class="btn btn-outline">View Gallery</a>
+            <a href="https://tomdouaud.itch.io/violence-is-always-the-anwser" target="_blank" class="btn" data-i18n="project.play_itch">Play on Itch.io</a>
+            <a href="#Gallery" target="_self" class="btn btn-outline" data-i18n="project.view_gallery">View Gallery</a>
         </div>
     </div>
 </header>
 
 <main class="container project-content">
-    
-    <div class="content-block">
-        <h2>Project Description</h2>
-        <p>
-            Project Overview Developed in 72 hours for Mini Jam 167, this project was built around the theme "Cyber" 
-            and the limitation "One button, two actions."
-            <br/>
-            <br/>
-            Concept & Mechanics The core concept was a humorous take on the limitation: since the player has limited 
-            input, every interaction is resolved through brute force. Whether hacking a terminal, opening a door, or 
-            climbing a ladder, the protagonist solves every problem by punching it.
-            <br/>
-            <br/>
-            Scope & Learning Originally planned as a 3-level puzzle-platformer, the scope was reduced during the jam to 
-            focus on a polished, functional prototype. While some puzzle elements were cut, this project stands as a 
-            significant milestone: it was our first completed team project. It provided invaluable lessons in rapid 
-            prototyping, scope management, and the importance of clean code architecture for future games.
-        </p>
-    </div>
-
-    <div class="content-block">
-        <h2>My Role & Contributions</h2>
-        <p>
-            I started as a Programmer, working on the initial codebase alongside my two teammates. I then shifted my 
-            focus to Level Design and Tilemapping, dedicating a significant amount of the jam to integrating the 2D 
-            assets and building the environments
-        </p>
-    </div>
-
-    <div class="content-block">
-        <h2>Challenges & Learnings</h2>
-        <p>
-            The biggest challenge was the sheer novelty of it all. It was my very first game 
-            jam, my first time using Godot, and the first time I had ever completed a game. Stepping into the world of 
-            game development in such a short timeframe was an intense and eye-opening experience.
-            <br/>
-            <br/>
-            The second major hurdle was sleep management. It took me several days to recover from the 
-            jam. I had never coded on so little sleep before, and the pace was incredibly intense. It was a physical 
-            challenge as much as a mental one.
-        </p>
-    </div>
 
     <div id="Gallery" class="content-block">
-        <h2>Gallery & Code Snippets</h2>
+        <h2 data-i18n="project.gallery.title">Gallery & Code Snippets</h2>
         <div class="gallery-grid">
             <figure>
                 <img src="../Assets/VIAS1.png" alt="Gameplay Screenshot">
@@ -114,11 +76,58 @@
         </div>
     </div>
 
+    
+    <div class="content-block">
+        <h2 data-i18n="project.desc.title">Project Description</h2>
+        <p>
+            Project Overview Developed in 72 hours for Mini Jam 167, this project was built around the theme "Cyber" 
+            and the limitation "One button, two actions."
+            <br/>
+            <br/>
+            Concept & Mechanics The core concept was a humorous take on the limitation: since the player has limited 
+            input, every interaction is resolved through brute force. Whether hacking a terminal, opening a door, or 
+            climbing a ladder, the protagonist solves every problem by punching it.
+            <br/>
+            <br/>
+            Scope & Learning Originally planned as a 3-level puzzle-platformer, the scope was reduced during the jam to 
+            focus on a polished, functional prototype. While some puzzle elements were cut, this project stands as a 
+            significant milestone: it was our first completed team project. It provided invaluable lessons in rapid 
+            prototyping, scope management, and the importance of clean code architecture for future games.
+        </p>
+    </div>
+
+    <div class="content-block">
+        <h2 data-i18n="project.role.title">My Role & Contributions</h2>
+        <p>
+            I started as a Programmer, working on the initial codebase alongside my two teammates. I then shifted my 
+            focus to Level Design and Tilemapping, dedicating a significant amount of the jam to integrating the 2D 
+            assets and building the environments
+        </p>
+    </div>
+
+    <div class="content-block">
+        <h2 data-i18n="project.challenges.title">Challenges & Learnings</h2>
+        <p>
+            The biggest challenge was the sheer novelty of it all. It was my very first game 
+            jam, my first time using Godot, and the first time I had ever completed a game. Stepping into the world of 
+            game development in such a short timeframe was an intense and eye-opening experience.
+            <br/>
+            <br/>
+            The second major hurdle was sleep management. It took me several days to recover from the 
+            jam. I had never coded on so little sleep before, and the pace was incredibly intense. It was a physical 
+            challenge as much as a mental one.
+        </p>
+    </div>
+
+
+
 </main>
 
 <footer id="contact">
-    <p class="copyright">&copy; 2026 Léo Cheikh-Boukal</p>
+    <p class="copyright" data-i18n="contact.rights">&copy; 2026 Léo Cheikh-Boukal - All rights reserved</p>
 </footer>
 
+<script src="../translations.js"></script>
+<script src="../i18n.js"></script>
 </body>
 </html>
